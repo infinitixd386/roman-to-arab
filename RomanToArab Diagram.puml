@@ -1,0 +1,39 @@
+@startuml
+
+package training.romantoarab.service{
+
+class RomanToArabConverter{
+
++ convert(roman: String): int
+
+}
+
+class RomanToArabConversionException{
+
+}
+
+}
+
+@enduml
+
+@startuml
+
+package training.romantoarab.domain{
+
+class Number{
+- numberInt: int
++ Number(numberInt: int)
++ getNumberInt(): int
++ setNumberInt(numberInt: int): void
+}
+
+class Roman{
+- romanString: String
++ Roman(romanString: String)
++ getRomanString(): String
++ setRomanString(romanString: String): void
+}
+
+}
+
+@enduml
